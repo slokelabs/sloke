@@ -1,0 +1,12 @@
+node_modules/
+.direnv/
+.DS_Store
+result-*
+result
+/.pre-commit-config.yaml
+dist/
+*.log
+*.db
+.env
+.env.*
+!.env.example

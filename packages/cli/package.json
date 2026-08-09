@@ -1,0 +1,22 @@
+{
+  "name": "@sloke/cli",
+  "version": "0.1.0",
+  "description": "sloke command-line interface",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "sloke": "src/cli.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "bun tsc --noEmit"
+  },
+  "dependencies": {
+    "@sloke/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "license": "MIT"
+}

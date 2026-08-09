@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "moduleDetection": "force",
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "@sloke/core": ["./packages/core/src/index.ts"],
+      "@sloke/adapters": ["./packages/adapters/src/index.ts"],
+      "@sloke/server": ["./packages/server/src/index.ts"],
+      "@sloke/cli": ["./packages/cli/src/cli.ts"]
+    },
+    "types": ["bun", "node"],
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "noUncheckedIndexedAccess": true,
+    "noEmit": true,
+    "verbatimModuleSyntax": true
+  },
+  "include": ["packages/*/src/**/*.ts", "packages/*/*.ts"]
+}
